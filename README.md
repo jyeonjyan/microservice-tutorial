@@ -1,7 +1,7 @@
-# spring Microservice Architecture
+# Spring Microservice Architecture
 
 ## Task
-* [소프트웨어 아키텍쳐](./details/software-architecture.md)
+* [소프트웨어 아키텍쳐](./details/task-1/software-architecture.md)
 
 ## Reference
 * [스프링-클라우드-마이크로서비스 (Dowon Lee)](https://inf.run/6xpw)
