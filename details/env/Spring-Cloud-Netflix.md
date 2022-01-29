@@ -21,3 +21,14 @@ server가 중앙 관리 센터라고 생각하면 됩니다. server가 client를
 client 설정 파일에 server의 정보를 입력하고, client 인스턴스가 시작할 때 server에게 자신의 ip, host, port등의 정보를 전송합니다.
 
 운영자들은 설정 파일에 `Eureka server` 정보만 입력하면 되고, 서비스들은 다른 서비스를 호출할 때 `Eureka server`에 등록된 인스턴스를 조회하면 됩니다.
+
+## 예제
+
+discovery-server
+
+```
+service default port: 8761
+```
+
+Eureka server `8761` port로 하지 않으면 Eureka client 에서 connection refuesed error를 던진다.
+[참고하세요](https://stackoverflow.com/a/69234230)
