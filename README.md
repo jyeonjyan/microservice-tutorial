@@ -1,10 +1,8 @@
 # Spring Microservice Architecture
 
-## 개발환경
-[Spring Cloud Netflix Eureka](./details/env/Spring-Cloud-Netflix.md)
-
 ## Task
 * [소프트웨어 아키텍쳐](./details/task-1/software-architecture.md)
+* [Spring Cloud Netflix Eureka](./details/env/Spring-Cloud-Netflix.md)
 
 ## Reference
 * [스프링-클라우드-마이크로서비스 (Dowon Lee)](https://inf.run/6xpw)
