@@ -1,4 +1,5 @@
-# 넷플릭스의 MSA 도입
+# Spring Cloud Netflix
+> https://spring.io/projects/spring-cloud-netflix
 
 ## 서론
 
@@ -74,3 +75,5 @@ client server에 이러한 옵션을 주면 아래와 같이 활성화된 2개�
 
 ## 운영에서도 random 포트를 이용하나요?
 
+결론. 서비스 애플리케이션이 사용되어지는 서비스 규모에 따라 다르지만 random 포트를 이용한다고 한다.  
+이후 답변 내용에서 k8s 컨테이너 POD 관리에 대한 내용이 나오는데 좀 더 공부하고 정리해 보려 한다.
