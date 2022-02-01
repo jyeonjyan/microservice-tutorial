@@ -10,7 +10,7 @@ public class EveryMomentController {
 
     @GetMapping("/sayHello")
     public String sayHello(){
-        return "hello every-moment server";
+        return "hello every-moment server!";
     }
 
 }
