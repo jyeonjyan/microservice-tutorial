@@ -1,0 +1,11 @@
+server:
+  port: 9200
+
+spring:
+  application:
+    name: every-moment
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
