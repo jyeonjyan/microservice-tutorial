@@ -1,0 +1,11 @@
+server:
+  port: 9201
+
+spring:
+  application:
+    name: candy
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
