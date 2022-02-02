@@ -10,4 +10,4 @@ eureka:
 
 spring:
   application:
-    name: apigateway-service
+    name: themoment-team-api-gateway-demo
