@@ -16,7 +16,11 @@ public class EveryMomentGatewayFilterConfig {
         return builder.routes()
                 .route(
                         r -> r.path("/every-moment/**")
-                            .uri("http://localhost:9200")
+                                .filters(
+                                        f -> f.addRequestHeader("reverse-proxy", "EveryMoment-gateway-sever")
+                                                .addResponseHeader("response-server", "EveryMoment-service-server")
+                                )
+                                .uri("http://localhost:9200")
                 ).build();
     }
 

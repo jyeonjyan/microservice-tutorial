@@ -16,6 +16,10 @@ public class CandyGatewayFilterConfig {
         return builder.routes()
                 .route(
                         r -> r.path("/candy/**")
+                                .filters(
+                                        f -> f.addRequestHeader("reverse-proxy", "candy-gateway-sever")
+                                                .addResponseHeader("response-server", "candy-service-server")
+                                )
                             .uri("http://localhost:9201")
                 ).build();
     }
