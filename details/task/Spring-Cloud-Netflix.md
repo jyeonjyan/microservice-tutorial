@@ -32,6 +32,15 @@ service default port: 8761
 Eureka server `8761` port로 하지 않으면 Eureka client 에서 connection refuesed error를 던진다.
 [참고하세요](https://stackoverflow.com/a/69234230)
 
+### discovery server는 자기 자신을 client 로 등록하면 안된다.
+
+```yml
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+```
+
 ## profile 별 port 다르게 실행하기
 
 ```sh
