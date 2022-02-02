@@ -20,7 +20,7 @@ public class EveryMomentGatewayFilterConfig {
                                         f -> f.addRequestHeader("reverse-proxy", "EveryMoment-gateway-sever")
                                                 .addResponseHeader("response-server", "EveryMoment-service-server")
                                 )
-                                .uri("http://localhost:9200")
+                                .uri("lb://EVERYMOMENT-SERVICE-SERVER")
                 ).build();
     }
 
