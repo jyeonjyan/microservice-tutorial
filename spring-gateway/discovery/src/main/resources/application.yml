@@ -1,0 +1,12 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: discovery-server
+
+# discovery server 는 자기 자신이 등록되면 안된다.
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
